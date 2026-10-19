@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# JavRanking has migrated to javranking.cc
+Sitemap: https://javranking.cc/sitemap-index.xml

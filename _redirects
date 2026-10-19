@@ -1,0 +1,21 @@
+# Static assets pass through
+/styles.css                           /styles.css                           200
+/app.js                               /app.js                               200
+/favicon.ico                          /favicon.ico                          200
+/robots.txt                           /robots.txt                           200
+/brand/*                              /brand/:splat                         200
+
+# Home and locale index pages display the migration landing page (do not auto-redirect)
+/                                     /                                     200
+/zh-hans                              /                                     200
+/zh-hans/                             /                                     200
+/zh-hant                              /                                     200
+/zh-hant/                             /                                     200
+/en                                   /                                     200
+/en/                                  /                                     200
+
+# All deeper sub-pages and paths 301 redirect to https://javranking.cc preserving SEO weights
+/zh-hans/*                            https://javranking.cc/zh-hans/:splat  301
+/zh-hant/*                            https://javranking.cc/zh-hant/:splat  301
+/en/*                                 https://javranking.cc/en/:splat       301
+/*                                    https://javranking.cc/:splat          301

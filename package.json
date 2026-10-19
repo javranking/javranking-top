@@ -1,0 +1,11 @@
+{
+  "name": "javranking-top",
+  "private": true,
+  "version": "1.0.0",
+  "description": "JavRanking domain migration landing page for javranking.top",
+  "scripts": {
+    "dev": "wrangler pages dev . --port 8788",
+    "preview": "wrangler pages dev . --port 8788",
+    "deploy": "wrangler pages deploy . --project-name javranking-top-redirect --branch main"
+  }
+}
